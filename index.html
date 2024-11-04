@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="scoreboard">
-            <h3>HOME</h3>
-            <div id="home-score" class="score">0</div>
-            <button class="score-btn" onclick="increaseScore('home')">+1</button>
-        </div>
-        <div class="scoreboard">
-            <h3>GUEST</h3>
-            <div id="guest-score" class="score">0</div>
-            <button class="score-btn" onclick="increaseScore('guest')">+1</button>
-        </div>
+      <div class="scoreboard">
+        <h3>HOME</h3>
+        <div id="home-score" class="score">0</div>
+        <button class="score-btn" onclick="increaseScore('home')">+1</button>
+      </div>
+      <div class="scoreboard">
+        <h3>GUEST</h3>
+        <div id="guest-score" class="score">0</div>
+        <button class="score-btn" onclick="increaseScore('guest')">+1</button>
+      </div>
     </div>
     <button class="new-game-btn" onclick="resetScores()">New Game</button>
     <footer>
-        <p>2024 by Kostiantyn Kovalchuk</p>
+      <p>2024 by Kostiantyn Kovalchuk</p>
     </footer>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

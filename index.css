@@ -1,115 +1,162 @@
 /* Basic reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1c2b4a;
-    font-family: Arial, sans-serif;
-    color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1c2b4a;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
 }
 
 /* Container styling */
 .container {
-    display: flex;
-    justify-content: space-around;
-    background-color: #1c2b4a;
-    padding: 20px;
-    border-radius: 12px 12px 0 0;
-    width: 90%;
-    max-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1c2b4a;
+  padding: 20px;
+  border-radius: 12px 12px 0 0;
+  width: 90%;
+  max-width: 400px;
 }
 
 /* Scoreboard styling */
 .scoreboard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 /* Score display styling */
 .score {
-    font-size: 3rem;
-    color: #f06292;
-    background-color: #111;
-    padding: 20px;
-    width: 80px;
-    text-align: center;
-    margin-bottom: 15px;
+  font-size: 3rem;
+  color: #f06292;
+  background-color: #111;
+  padding: 20px;
+  width: 80px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 /* Button styling */
 .score-btn {
-    font-size: 1.5rem;
-    color: #f06292;
-    background-color: transparent;
-    border: 2px solid #f06292;
-    border-radius: 8px;
-    padding: 10px;
-    width: 60px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s;
+  font-size: 1.5rem;
+  color: #f06292;
+  background-color: transparent;
+  border: 2px solid #f06292;
+  border-radius: 8px;
+  padding: 10px;
+  width: 60px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
 }
 
 .score-btn:hover {
-    background-color: #f06292;
-    color: #1c2b4a;
+  background-color: #f06292;
+  color: #1c2b4a;
 }
 
 .score-btn:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 /* New Game button styling */
 .new-game-btn {
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: #f06292;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin: 20px 0;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #f06292;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
 }
 
 .new-game-btn:hover {
-    background-color: #e0487f;
+  background-color: #e0487f;
 }
 
 .new-game-btn:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 /* Footer styling */
 footer {
-    text-align: center;
-    padding: 10px;
-    color: #ffffff;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 0 0 12px 12px;
-    background-color: #1c2b4a;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 0 0 12px 12px;
+  background-color: #1c2b4a;
 }
 
 footer p {
-    margin: 0;
-    font-size: 0.9rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .scoreboard {
+    margin-bottom: 20px;
+  }
+
+  .score {
+    font-size: 2.5rem;
+    padding: 15px;
+    width: 70px;
+  }
+
+  .score-btn {
+    font-size: 1.2rem;
+    padding: 8px;
+    width: 50px;
+  }
+
+  .new-game-btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+}
+body,
+button {
+  -webkit-touch-callout: none; /* Prevents callouts on touch hold */
+  -webkit-user-select: none; /* Disables text selection on iOS */
+  -ms-user-select: none; /* Disables text selection on IE */
+  user-select: none; /* Disables text selection */
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight */
+  touch-action: manipulation; /* Disables double-tap zoom */
 }
