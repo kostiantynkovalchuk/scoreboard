@@ -20,6 +20,7 @@ body {
 /* Container styling */
 .container {
   display: flex;
+  flex-direction: row; /* Aligns elements horizontally */
   justify-content: space-around;
   background-color: #1c2b4a;
   padding: 20px;
